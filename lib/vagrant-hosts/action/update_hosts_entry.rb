@@ -10,6 +10,7 @@ module VagrantPlugins
         end
 
         def call(env)
+        	env[:host].update_hosts_entry(env[:machine].guest.capability(:read_ip_address), env[:machine].config.vm.hostname)
           env[:machine].env.active_machines.each do |machine|
           	m = env[:machine].env.machine(machine[0], machine[1])
           	if !m.guest.capability?(:update_hosts_entry)

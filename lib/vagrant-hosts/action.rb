@@ -12,11 +12,11 @@ module VagrantPlugins
 			  	end
 				end
 
-				#def remove_hosts_entry
-				#	@remove_hosts_entry ||= ::Vagrant::Action::Builder.new.tap do |b|
-				#		b.use VagrantPlugins::Hosts::Action::RemoveHostsEntry
-				#	end
-				#end
+				def remove_hosts_entry
+					@remove_hosts_entry ||= ::Vagrant::Action::Builder.new.tap do |b|
+						b.use VagrantPlugins::Hosts::Action::RemoveHostsEntry
+					end
+				end
 			end
 
 		end

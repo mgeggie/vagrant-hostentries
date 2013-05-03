@@ -8,6 +8,7 @@ module VagrantPlugins
         end
 
         def call(env)
+        	env[:host].remove_hosts_entry(env[:machine].config.vm.hostname)
           env[:machine].env.active_machines.each do |machine|
           	if !machine.guest.capability?(:remove_hosts_entry)
           		@logger.warn "Unsupported machine #{machine.config.name}"
