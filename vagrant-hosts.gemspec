@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Mike Geggie"]
-  gem.email         = ["mike@hubub.com"]
+  gem.email         = ["mikegeggie@gmail.com"]
   gem.description   = %q{vagrant-hosts is a Vagrant plugin to manage /etc/hosts entries on both the host OS and guest VMs.}
   gem.summary       = %q{Vagrant plugin to manage /etc/hosts entries.}
   gem.homepage      = "https://github.com/trigren/vagrant-hosts"
