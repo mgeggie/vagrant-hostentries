@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant.require_plugin('vagrant-hosts')
+Vagrant.require_plugin('vagrant-hostentries')
 
 Vagrant.configure("2") do |config|
   # All Vagrant configuration is done here. The most common configuration

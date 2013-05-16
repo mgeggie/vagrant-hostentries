@@ -1,8 +1,8 @@
 module VagrantPlugins
-	module Hosts
+	module Hostentries
 		module GuestCapability
 			module Linux
-  			module RemoveHostsEntry
+  			module RemoveHostentriesEntry
   				def self.remove_hosts_entry(machine, name)
   					machine.communicate.tap do |comm|
   						comm.sudo("cat /etc/hosts | grep -v '#{name} \#VAGRANTHOSTS$' >>/etc/hosts.tmp">)

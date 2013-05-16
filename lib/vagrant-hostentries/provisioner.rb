@@ -2,7 +2,7 @@ require 'log4r'
 require 'vagrant'
 
 module VagrantPlugins
-	module Hosts
+	module Hostentries
 		class Provisioner < Vagrant.plugin("2", :provisioner)
 			def provision
 				@logger = Log4r::Logger.new("vagrant::plugins::hosts")

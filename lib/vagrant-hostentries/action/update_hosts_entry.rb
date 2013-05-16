@@ -1,7 +1,7 @@
 require 'log4r'
 
 module VagrantPlugins
-	module Hosts
+	module Hostentries
 		module Action
 			class UpdateHostsEntry
         def initialize(app, env)

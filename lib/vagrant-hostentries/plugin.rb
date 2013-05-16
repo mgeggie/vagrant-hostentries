@@ -1,14 +1,14 @@
 require 'vagrant'
 
 module VagrantPlugins
-  module Hosts
+  module Hostentries
     class Plugin < Vagrant.plugin("2")
-      name "Vagrant Hosts"
+      name "Vagrant Hostentries"
       description "Manages host files on guest and host OSes"
 
       host("bsd") do
         require_relative 'hosts/bsd/host'
-        Hosts::BSD::Host
+        Hostentries::BSD::Host
       end
 
       guest_capability("linux", "update_hosts_entry") do

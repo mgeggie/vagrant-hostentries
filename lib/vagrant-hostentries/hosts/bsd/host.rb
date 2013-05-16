@@ -2,7 +2,7 @@ require 'vagrant'
 require 'vagrant/util/platform'
 
 module VagrantPlugins
-  module Hosts
+  module Hostentries
   	module BSD
   		class Host < Vagrant.plugin("2", :host)
   			include Vagrant::Util

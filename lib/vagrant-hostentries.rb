@@ -1,11 +1,11 @@
 require 'pathname'
 
-require 'vagrant-hosts/plugin'
+require 'vagrant-hostentries/plugin'
 
 module VagrantPlugins
-  module Hosts
+  module Hostentries
 
-    autoload :Action, 'vagrant-hosts/action'
+    autoload :Action, 'vagrant-hostentries/action'
     # This sets up our log level to be whatever VAGRANT_LOG is.
     def self.setup_logging
       require "log4r"

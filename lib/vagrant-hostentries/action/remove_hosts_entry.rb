@@ -1,5 +1,5 @@
 module VagrantPlugins
-	module Hosts
+	module Hostentries
 		module Action
 			class RemoveHostsEntry
         def initialize(app, env)
