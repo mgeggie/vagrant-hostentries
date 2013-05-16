@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "vagrant-hostentries"
   gem.require_paths = ["lib"]
-  gem.version       = "0.6.1"
+  gem.version       = "0.6.2"
 
   gem.add_development_dependency  'bundler'
   gem.add_development_dependency  'vagrant'
